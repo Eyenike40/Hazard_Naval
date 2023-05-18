@@ -13,7 +13,7 @@ import Fire
 
 
 # Create the data for the graph
-data = {'Accident Type': ['Slide and fall', 'Capsize/Listing', 'Cargo Handling Failure', 'Mooring operation Accident', 'Hazardous incidents', 'Escape of Harmful Substance', 'Contact', 'Foundering', 'Electrical Accident', 'Ship Flooding/Water Ingress', 'Heavy Weather Damage', 'Hull Failure', 'Fire Accidents', 'Missing Vessel', 'Capsize/Listing', 'Pollution'],
+data = {'Accident Type': ['Slip and fall', 'Capsize/Listing', 'Cargo Handling Failure', 'Mooring operation Accident', 'Hazardous incidents', 'Escape of Harmful Substance', 'Contact', 'Foundering', 'Electrical Accident', 'Ship Flooding/Water Ingress', 'Heavy Weather Damage', 'Hull Failure', 'Fire Accidents', 'Missing Vessel', 'Capsize/Listing', 'Pollution'],
         'Number of Accidents': [8848, 390, 110, 1566, 1310, 110, 593, 524, 1802, 1425, 86, 39, 1390, 6, 926, 50],
         'Percentage of Occurrence (%)': [46.14, 2.03, 0.57, 8.17, 6.83, 0.57, 3.09, 2.73, 9.40, 7.43, 0.45, 0.20, 7.25, 0.03, 4.83, 0.26]}
 df = pd.DataFrame(data)

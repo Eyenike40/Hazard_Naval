@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 from annotated_text import annotated_text
 import matplotlib.pyplot as plt
-
+import numpy as np
 
 def conventional_risk():
     annotated_text(("Risk Analysis", "", "#000000", "#00FF00"))
@@ -51,6 +51,7 @@ def conventional_risk():
         # Step 6: Display the result
         st.write("#### Risk Score For Hazards for Mooring Operation Accident")
         annotated_text(("Conventional Method", "", "#000000", "#FFFF00"))
+        risk_df.index = np.arange(1,len(hazards)+1)
         st.dataframe(risk_df)
 
         # Define the weights for each officer
@@ -78,6 +79,7 @@ def conventional_risk():
 
         # Display the result
         annotated_text(("Weighted Risk Method", "", "#000000", "#FFFF00"))
+        risk_df_weighted.index = np.arange(1,len(hazards)+1)
         st.dataframe(risk_df_weighted)
 
         # Plot the ranks of the two methods
